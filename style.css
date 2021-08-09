@@ -1,0 +1,52 @@
+body {
+    background-color: rosybrown;
+}
+
+.box {
+    position: fixed;
+    left:0;
+    top:0;
+    right:20px;
+    width: 80px;
+    height:80px;
+    background-color: maroon;
+    animation-name:circleAround;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circleAround {
+    0% {
+        left:0;
+        top:0;
+        background: maroon;
+    }
+    25% {
+        left:0;
+        top:calc(100% - 75px);
+        background: maroon;
+    }
+    50% {
+        top:calc(100% - 75px);
+        left:calc(100% - 75px);
+        background-color: rebeccapurple;
+    }
+    75% {
+        left:calc(100% - 75px);
+        top:0;
+        background-color: rebeccapurple;
+
+    }
+    100% {
+        left:0;
+        top:0;
+    }
+}
+
+
+
+
+
+
